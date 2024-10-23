@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<instances>
+ <instance id="VASTCreateTable.7" instanceOf="CAST_Oracle_RelationalTable">
+  <CAST_SQL_Object owner="WEBGOAT_GUEST" version="10.2.0.4.0" objectId="53214"/>
+  <CAST_ANSISQL_TableSource scope=""/>
+  <CAST_Resolution_Identification resolutionName="PRODUCT_SYSTEM_DATA"/>
+  <CAST_Linker_ExportedSymbol isPublic="1" exportCollation="2" exportedCategory="138016" exportedPath="CASTDB.WEBGOAT_GUEST" exportName="PRODUCT_SYSTEM_DATA" exportExtension=""/>
+  <CAST_AST_ANSISQL_WithAnonymousClause anonymousClause="" onCommit=""/>
+  <CAST_Symbol_WithParent parent="p_Schema.1"/>
+  <POSITIONABLE POSITIONS="CAST_TargetSourceFile.7(1,1,7,-1)"/>
+ </instance>
+ <instance id="CAST_TargetSourceFile.7" instanceOf="CAST_TargetSourceFile">
+  <bookmark source="VASTCreateTable.7.src"/>
+  <shell fullPath="VASTCreateTable.7.src"/>
+ </instance>
+<instance id="p_ColumnOfTable.33" instanceOf="CAST_Oracle_TableColumn">
+ <CAST_AST_ANSISQL_WithOrder order="1"/>
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_Column isNull="0" columnSize="6"/>
+ <CAST_AST_ANSISQL_WithGenericDataType collation="CHAR_CS"/>
+ <CAST_Resolution_Identification resolutionName="PRODUCTID"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.7"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="6" precision="" scale=""/>
+</instance>
+<instance id="p_ColumnOfTable.34" instanceOf="CAST_Oracle_TableColumn">
+ <CAST_AST_ANSISQL_WithOrder order="2"/>
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_Column isNull="1" columnSize="20"/>
+ <CAST_AST_ANSISQL_WithGenericDataType collation="CHAR_CS"/>
+ <CAST_Resolution_Identification resolutionName="PRODUCT_NAME"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.7"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="20" precision="" scale=""/>
+</instance>
+<instance id="p_ColumnOfTable.35" instanceOf="CAST_Oracle_TableColumn">
+ <CAST_AST_ANSISQL_WithOrder order="3"/>
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_Column isNull="1" columnSize="10"/>
+ <CAST_AST_ANSISQL_WithGenericDataType collation="CHAR_CS"/>
+ <CAST_Resolution_Identification resolutionName="PRICE"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.7"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="10" precision="" scale=""/>
+</instance>
+<instance id="CAST_AST_ANSISQL_GenericColumnReference.16" instanceOf="CAST_AST_ANSISQL_GenericColumnReference">
+ <CAST_AST_ANSISQL_WithOrder order="1"/>
+ <CAST_AST_WithParent parentAST="p_Constraint.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_ColumnOfTable.33"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_GenericColumnReference.17" instanceOf="CAST_AST_ANSISQL_GenericColumnReference">
+ <CAST_AST_ANSISQL_WithOrder order=""/>
+ <CAST_AST_WithParent parentAST="p_Constraint.12"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_ColumnOfTable.33"/>
+</instance>
+<instance id="p_Constraint.1" instanceOf="CAST_Oracle_PrimaryKeyConstraint">
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_Resolution_Identification resolutionName="SYS_C006257"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.7"/>
+ <CAST_ANSISQL_Constraint nameIsDefinedByDBMS="1"/>
+</instance>
+<instance id="p_Constraint.12" instanceOf="CAST_Oracle_CheckConstraint">
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_CheckConstraint conditionExpression="&quot;PRODUCTID&quot; IS NOT NULL"/>
+ <CAST_Resolution_Identification resolutionName="SYS_C006256"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.7"/>
+ <CAST_ANSISQL_Constraint nameIsDefinedByDBMS="1"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ColumnDataTypeReference.33" instanceOf="CAST_AST_ANSISQL_ColumnDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_ColumnOfTable.35"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ColumnDataTypeReference.34" instanceOf="CAST_AST_ANSISQL_ColumnDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_ColumnOfTable.33"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ColumnDataTypeReference.35" instanceOf="CAST_AST_ANSISQL_ColumnDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_ColumnOfTable.34"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+</instances>

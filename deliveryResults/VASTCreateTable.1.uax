@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<instances>
+ <instance id="VASTCreateTable.1" instanceOf="CAST_Oracle_RelationalTable">
+  <CAST_SQL_Object owner="WEBGOAT_GUEST" version="10.2.0.4.0" objectId="53229"/>
+  <CAST_ANSISQL_TableSource scope=""/>
+  <CAST_Resolution_Identification resolutionName="AUTH"/>
+  <CAST_Linker_ExportedSymbol isPublic="1" exportCollation="2" exportedCategory="138016" exportedPath="CASTDB.WEBGOAT_GUEST" exportName="AUTH" exportExtension=""/>
+  <CAST_AST_ANSISQL_WithAnonymousClause anonymousClause="" onCommit=""/>
+  <CAST_Symbol_WithParent parent="p_Schema.1"/>
+  <POSITIONABLE POSITIONS="CAST_TargetSourceFile.1(1,1,6,-1)"/>
+ </instance>
+ <instance id="CAST_TargetSourceFile.1" instanceOf="CAST_TargetSourceFile">
+  <bookmark source="VASTCreateTable.1.src"/>
+  <shell fullPath="VASTCreateTable.1.src"/>
+ </instance>
+<instance id="p_ColumnOfTable.1" instanceOf="CAST_Oracle_TableColumn">
+ <CAST_AST_ANSISQL_WithOrder order="1"/>
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_Column isNull="0" columnSize="10"/>
+ <CAST_AST_ANSISQL_WithGenericDataType collation="CHAR_CS"/>
+ <CAST_Resolution_Identification resolutionName="ROLE"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.1"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="10" precision="" scale=""/>
+</instance>
+<instance id="p_ColumnOfTable.2" instanceOf="CAST_Oracle_TableColumn">
+ <CAST_AST_ANSISQL_WithOrder order="2"/>
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_Column isNull="0" columnSize="20"/>
+ <CAST_AST_ANSISQL_WithGenericDataType collation="CHAR_CS"/>
+ <CAST_Resolution_Identification resolutionName="FUNCTIONID"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.1"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="20" precision="" scale=""/>
+</instance>
+<instance id="CAST_AST_ANSISQL_GenericColumnReference.1" instanceOf="CAST_AST_ANSISQL_GenericColumnReference">
+ <CAST_AST_ANSISQL_WithOrder order="1"/>
+ <CAST_AST_WithParent parentAST="p_Constraint.5"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_ColumnOfTable.1"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_GenericColumnReference.2" instanceOf="CAST_AST_ANSISQL_GenericColumnReference">
+ <CAST_AST_ANSISQL_WithOrder order="2"/>
+ <CAST_AST_WithParent parentAST="p_Constraint.5"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_ColumnOfTable.2"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_GenericColumnReference.3" instanceOf="CAST_AST_ANSISQL_GenericColumnReference">
+ <CAST_AST_ANSISQL_WithOrder order=""/>
+ <CAST_AST_WithParent parentAST="p_Constraint.26"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_ColumnOfTable.2"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_GenericColumnReference.4" instanceOf="CAST_AST_ANSISQL_GenericColumnReference">
+ <CAST_AST_ANSISQL_WithOrder order=""/>
+ <CAST_AST_WithParent parentAST="p_Constraint.25"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_ColumnOfTable.1"/>
+</instance>
+<instance id="p_Constraint.5" instanceOf="CAST_Oracle_PrimaryKeyConstraint">
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_Resolution_Identification resolutionName="SYS_C006275"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.1"/>
+ <CAST_ANSISQL_Constraint nameIsDefinedByDBMS="1"/>
+</instance>
+<instance id="p_Constraint.25" instanceOf="CAST_Oracle_CheckConstraint">
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_CheckConstraint conditionExpression="&quot;ROLE&quot; IS NOT NULL"/>
+ <CAST_Resolution_Identification resolutionName="SYS_C006273"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.1"/>
+ <CAST_ANSISQL_Constraint nameIsDefinedByDBMS="1"/>
+</instance>
+<instance id="p_Constraint.26" instanceOf="CAST_Oracle_CheckConstraint">
+ <CAST_SQL_Object version="10.2.0.4.0"/>
+ <CAST_ANSISQL_CheckConstraint conditionExpression="&quot;FUNCTIONID&quot; IS NOT NULL"/>
+ <CAST_Resolution_Identification resolutionName="SYS_C006274"/>
+ <CAST_Symbol_WithParent parent="VASTCreateTable.1"/>
+ <CAST_ANSISQL_Constraint nameIsDefinedByDBMS="1"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ColumnDataTypeReference.1" instanceOf="CAST_AST_ANSISQL_ColumnDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_ColumnOfTable.2"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ColumnDataTypeReference.2" instanceOf="CAST_AST_ANSISQL_ColumnDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_ColumnOfTable.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+</instances>

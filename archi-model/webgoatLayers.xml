@@ -1,0 +1,53 @@
+<sets name="Layers" version="1.0.0.0" date="Tue Jan 24 21:52:09 CET 2012" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAST-Sets.xsd">
+ <set name = "Webgoat Lessons" type = "layer">
+  <selection-criteria subobjects="yes">
+   <property name = "fullname" operator = "eq" >
+    <value>org.owasp.webgoat.lessons</value>
+   </property>
+  </selection-criteria>
+ </set>
+ <set name = "Webgoat Util" type = "layer">
+  <selection-criteria subobjects="yes">
+   <property name = "fullname" operator = "eq" >
+    <value>org.owasp.webgoat.util</value>
+   </property>
+  </selection-criteria>
+ </set>
+ <set name = "Webgoat Session" type = "layer">
+  <selection-criteria subobjects="yes">
+   <property name = "fullname" operator = "eq" >
+    <value>org.owasp.webgoat.session</value>
+   </property>
+  </selection-criteria>
+ </set>
+ <set name = "Webgoat Database" type = "layer">
+  <selection-criteria subobjects="yes">
+   <property name = "type" operator = "eq" >
+    <value>CAST_SQL_PLSQL_Project</value>
+   </property>
+  </selection-criteria>
+ </set>
+ <set name = "Webgoat Bean" type = "layer">
+  <selection-criteria subobjects="yes">
+   <property name = "type" operator = "eq" >
+    <value>JSP_BEAN</value>
+   </property>
+  </selection-criteria>
+ </set>
+ <set name = "Unassigned" type = "layer">
+ </set>
+ <set name = "Webgoat Interface" type = "layer">
+  <selection-criteria subobjects="yes">
+   <property name = "type" operator = "eq" >
+    <value>JSP_APP</value>
+   </property>
+  </selection-criteria>
+ </set>
+ <set name = "Webgoat Servlets" type = "layer">
+  <selection-criteria subobjects="yes">
+   <property name = "fullname" operator = "eq" >
+    <value>org.owasp.webgoat.servlets</value>
+   </property>
+  </selection-criteria>
+ </set>
+</sets>

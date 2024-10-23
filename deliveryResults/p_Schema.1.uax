@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<instances>
+ <instance id="p_Schema.1" instanceOf="CAST_SQL_Schema">
+  <CAST_SQL_Object version="10.2.0.4.0"/>
+  <CAST_Resolution_Identification resolutionName="WEBGOAT_GUEST"/>
+  <CAST_Linker_ExportedSymbol isPublic="1" exportCollation="2" exportedCategory="138013" exportedPath="CASTDB" exportName="WEBGOAT_GUEST" exportExtension=""/>
+  <CAST_Symbol_WithParent parent="p_Instance.1"/>
+ </instance>
+</instances>

@@ -1,0 +1,15 @@
+<project name="Webgoat" version="1.0.0.0" date="Tue Jan 24 21:52:09 CET 2012" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAST-ArchiCheckerModel.xsd">
+  <rule type="AuthorizedLinks" />
+  <datasets name="webgoatLayers.xml" />
+  <dependencies name="webgoatDependencies.xml" />
+  <positions>
+    <dataset name="Webgoat Interface" x="591" y="0" width="250" height="200"/>
+    <dataset name="Webgoat Servlets" x="290" y="117" width="250" height="200"/>
+    <dataset name="Webgoat Lessons" x="521" y="357" width="310" height="101"/>
+    <dataset name="Webgoat Database" x="639" y="743" width="250" height="200"/>
+    <dataset name="Webgoat Util" x="1038" y="396" width="250" height="200"/>
+    <dataset name="Unassigned" x="0" y="78" width="250" height="200"/>
+    <dataset name="Webgoat Bean" x="163" y="389" width="250" height="200"/>
+    <dataset name="Webgoat Session" x="887" y="77" width="324" height="135"/>
+  </positions>
+</project>

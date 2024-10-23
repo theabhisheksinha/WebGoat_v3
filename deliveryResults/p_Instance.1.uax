@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<instances>
+ <instance id="p_Instance.1" instanceOf="CAST_SQL_Instance">
+  <CAST_SQL_Object version="10.2.0.4.0"/>
+  <CAST_SQL_Area DBMSType="ORACLE"/>
+  <CAST_Resolution_Identification resolutionName="CASTDB"/>
+  <CAST_Symbol_WithParent parent="p_Server.1"/>
+ </instance>
+<instance id="p_DataType.42" instanceOf="CAST_AST_Oracle_UndefinedDatatype">
+ <CAST_Named nameAST="UNDEFINED"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.1" instanceOf="CAST_AST_ANSISQL_CharDatatype">
+ <CAST_AST_ANSISQL_StringDatatype hasByteExtension="1" hasCharExtension=""/>
+ <CAST_Named nameAST="CHAR"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.2" instanceOf="CAST_AST_ANSISQL_CharDatatype">
+ <CAST_AST_ANSISQL_StringDatatype hasByteExtension="" hasCharExtension="1"/>
+ <CAST_Named nameAST="CHAR(CHAR)"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.18" instanceOf="CAST_AST_ANSISQL_UROWIDDatatype">
+ <CAST_Named nameAST="UROWID"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.11" instanceOf="CAST_AST_ANSISQL_NCLOBDatatype">
+ <CAST_Named nameAST="NCLOB"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.9" instanceOf="CAST_AST_ANSISQL_NCharVaryingDatatype">
+ <CAST_Named nameAST="NCHAR VARYING"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.22" instanceOf="CAST_AST_ANSISQL_BinaryFloatDatatype">
+ <CAST_Named nameAST="BINARY_FLOAT"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.40" instanceOf="CAST_AST_ANSISQL_IntervalDayToSecondDatatype">
+ <CAST_Named nameAST="INTERVAL DAY TO SECOND"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.19" instanceOf="CAST_AST_ANSISQL_NumberDatatype">
+ <CAST_Named nameAST="NUMBER"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.15" instanceOf="CAST_AST_ANSISQL_BFileStringDatatype">
+ <CAST_Named nameAST="BFILE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.23" instanceOf="CAST_AST_ANSISQL_BinaryDoubleDatatype">
+ <CAST_Named nameAST="BINARY_DOUBLE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.27" instanceOf="CAST_AST_ANSISQL_RawDatatype">
+ <CAST_Named nameAST="RAW"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.6" instanceOf="CAST_AST_ANSISQL_NVarchar2Datatype">
+ <CAST_Named nameAST="NVARCHAR2"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.17" instanceOf="CAST_AST_ANSISQL_RowIdDatatype">
+ <CAST_Named nameAST="ROWID"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.32" instanceOf="CAST_AST_Oracle_RecordDatatype">
+ <CAST_Named nameAST="PL/SQL RECORD"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.33" instanceOf="CAST_AST_Oracle_TableDatatype">
+ <CAST_Named nameAST="PL/SQL TABLE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.39" instanceOf="CAST_AST_ANSISQL_IntervalYearToMonthDatatype">
+ <CAST_Named nameAST="INTERVAL YEAR TO MONTH"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.10" instanceOf="CAST_AST_ANSISQL_CLOBDatatype">
+ <CAST_Named nameAST="CLOB"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.24" instanceOf="CAST_AST_ANSISQL_IntegerDatatype">
+ <CAST_Named nameAST="INTEGER"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.21" instanceOf="CAST_AST_ANSISQL_BinaryIntegerDatatype">
+ <CAST_Named nameAST="BINARY_INTEGER"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.3" instanceOf="CAST_AST_ANSISQL_NCharDatatype">
+ <CAST_Named nameAST="NCHAR"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.20" instanceOf="CAST_AST_ANSISQL_FloatDatatype">
+ <CAST_Named nameAST="FLOAT"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+ <CAST_AST_ANSISQL_ApproximateNumericDatatype approximateNumericTypeId="1"/>
+</instance>
+<instance id="p_DataType.12" instanceOf="CAST_AST_ANSISQL_TimestampWithTimeZoneDatatype">
+ <CAST_Named nameAST="TIMESTAMP WITH TIME ZONE"/>
+ <CAST_AST_ANSISQL_DatetimeDatatype datetimeTypeId="3" timeZone="1" timeZoneString="WITH TIME ZONE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.13" instanceOf="CAST_AST_ANSISQL_TimestampWithTimeZoneDatatype">
+ <CAST_Named nameAST="TIMESTAMP WITH LOCAL TIME ZONE"/>
+ <CAST_AST_ANSISQL_DatetimeDatatype datetimeTypeId="3" timeZone="3" timeZoneString="WITH LOCAL TIME ZONE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.14" instanceOf="CAST_AST_ANSISQL_TimestampWithTimeZoneDatatype">
+ <CAST_Named nameAST="TIME WITH TIME ZONE"/>
+ <CAST_AST_ANSISQL_DatetimeDatatype datetimeTypeId="2" timeZone="1" timeZoneString="WITH TIME ZONE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.36" instanceOf="CAST_AST_ANSISQL_DateDatatype">
+ <CAST_Named nameAST="DATE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.4" instanceOf="CAST_AST_ANSISQL_Varchar2Datatype">
+ <CAST_AST_ANSISQL_StringDatatype hasByteExtension="1" hasCharExtension=""/>
+ <CAST_Named nameAST="VARCHAR2"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.5" instanceOf="CAST_AST_ANSISQL_Varchar2Datatype">
+ <CAST_AST_ANSISQL_StringDatatype hasByteExtension="" hasCharExtension="1"/>
+ <CAST_Named nameAST="VARCHAR2(CHAR)"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.25" instanceOf="CAST_AST_ANSISQL_SimpleIntegerDatatype">
+ <CAST_Named nameAST="SIMPLE_INTEGER"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.26" instanceOf="CAST_AST_ANSISQL_LongDatatype">
+ <CAST_Named nameAST="LONG"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.30" instanceOf="CAST_AST_Oracle_MLSLABELDatatype">
+ <CAST_Named nameAST="MLSLABEL"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.38" instanceOf="CAST_AST_ANSISQL_TimestampDatatype">
+ <CAST_Named nameAST="TIMESTAMP"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.7" instanceOf="CAST_AST_ANSISQL_VarcharDatatype">
+ <CAST_AST_ANSISQL_StringDatatype hasByteExtension="1" hasCharExtension=""/>
+ <CAST_Named nameAST="VARCHAR"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.8" instanceOf="CAST_AST_ANSISQL_VarcharDatatype">
+ <CAST_AST_ANSISQL_StringDatatype hasByteExtension="" hasCharExtension="1"/>
+ <CAST_Named nameAST="VARCHAR(CHAR)"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.31" instanceOf="CAST_AST_Oracle_REFDatatype">
+ <CAST_Named nameAST="REF"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.37" instanceOf="CAST_AST_ANSISQL_TimeDatatype">
+ <CAST_Named nameAST="TIME"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.41" instanceOf="CAST_AST_Oracle_XMLDatatype">
+ <CAST_Named nameAST="XMLTYPE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.16" instanceOf="CAST_AST_ANSISQL_CFileStringDatatype">
+ <CAST_Named nameAST="CFILE"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.28" instanceOf="CAST_AST_ANSISQL_LongRawDatatype">
+ <CAST_Named nameAST="LONG RAW"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.29" instanceOf="CAST_AST_Oracle_RefCursorDatatype">
+ <CAST_Named nameAST="REF CURSOR"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.35" instanceOf="CAST_AST_ANSISQL_BLOBDatatype">
+ <CAST_Named nameAST="BLOB"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+<instance id="p_DataType.34" instanceOf="CAST_AST_ANSISQL_BooleanDatatype">
+ <CAST_Named nameAST="BOOLEAN"/>
+ <CAST_AST_WithParent parentAST="p_Instance.1"/>
+</instance>
+</instances>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UAXFiles>
+ <UAXOption name="configurationVersion" value="1.4"/>
+ <UAXOption name="platform" value="Oracle10g"/>
+ <UAXOption name="RDBMS.Version" value="10.2.0.4.0"/>
+ <UAXOption name="format" value="text"/>
+ <UAXOption name="totalFatalExtractionErrorsNb" value="0"/>
+ <UAXOption name="totalExtractionErrorsNb" value="0"/>
+ <UAXOption name="schema" value="WEBGOAT_GUEST"/>
+ <UAXOption name="RDBMS.Name" value="Oracle Server"/>
+ <UAXOption name="totalExportedRowsNb" value="479"/>
+ <UAXOption name="platform.type" value="2"/>
+ <UAXOption name="technicalVersion" value="1.00"/>
+ <UAXOption name="platform.description" value="PL/SQL"/>
+ <UAXOption name="configurationFilePath" value="CASTDatabase.config"/>
+ <UAXFile path="p_Server.1.uax" name="castdemofki" type="CAST_SQL_Machine">
+  <UAXFile path="p_Instance.1.uax" name="CASTDB" type="CAST_SQL_Instance">
+   <UAXFile path="p_Schema.1.uax" name="WEBGOAT_GUEST" type="CAST_SQL_Schema">
+    <UAXFile path="VASTCreateTable.1.uax" name="AUTH" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.2.uax" name="EMPLOYEE" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.3.uax" name="MESSAGES" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.4.uax" name="MFE_IMAGES" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.5.uax" name="OWNERSHIP" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.6.uax" name="PINS" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.7.uax" name="PRODUCT_SYSTEM_DATA" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.8.uax" name="ROLES" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.9.uax" name="SALARIES" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.10.uax" name="TAN" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.11.uax" name="TRANSACTIONS" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.12.uax" name="USER_DATA" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.13.uax" name="USER_DATA_TAN" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.14.uax" name="USER_LOGIN" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.15.uax" name="USER_SYSTEM_DATA" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateTable.16.uax" name="WEATHER_DATA" type="CAST_Oracle_RelationalTable"/>
+    <UAXFile path="VASTCreateIndex.1.uax" name="SYS_C006275" type="CAST_Oracle_Index"/>
+    <UAXFile path="VASTCreateIndex.2.uax" name="SYS_C006269" type="CAST_Oracle_Index"/>
+    <UAXFile path="VASTCreateIndex.3.uax" name="SYS_C006278" type="CAST_Oracle_Index"/>
+    <UAXFile path="VASTCreateIndex.4.uax" name="SYS_C006257" type="CAST_Oracle_Index"/>
+    <UAXFile path="VASTCreateIndex.5.uax" name="SYS_C006272" type="CAST_Oracle_Index"/>
+    <UAXFile path="VASTCreateIndex.6.uax" name="SYS_C006259" type="CAST_Oracle_Index"/>
+    <UAXFile path="VASTCreateProcedure.1.uax" name="UPDATE_EMPLOYEE" type="CAST_Oracle_Procedure"/>
+    <UAXFile path="VASTCreateProcedure.2.uax" name="UPDATE_EMPLOYEE_BACKUP" type="CAST_Oracle_Procedure"/>
+    <UAXFile path="VASTCreateFunction.1.uax" name="EMPLOYEE_LOGIN" type="CAST_Oracle_Function"/>
+    <UAXFile path="VASTCreateFunction.2.uax" name="EMPLOYEE_LOGIN_BACKUP" type="CAST_Oracle_Function"/>
+   </UAXFile>
+  </UAXFile>
+ </UAXFile>
+</UAXFiles>

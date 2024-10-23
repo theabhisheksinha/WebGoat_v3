@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<instances>
+ <instance id="VASTCreateProcedure.1" instanceOf="CAST_Oracle_Procedure">
+  <CAST_ANSISQL_WithEncryptionAttribute isWrapped="0"/>
+  <CAST_SQL_Object version="10.2.0.4.0" owner="WEBGOAT_GUEST" objectId="52851"/>
+  <CAST_Resolution_Identification resolutionName="UPDATE_EMPLOYEE"/>
+  <CAST_Oracle_InvalidObject isInvalid="0"/>
+  <CAST_Linker_ExportedSymbol isPublic="1" exportCollation="2" exportedCategory="140399" exportedPath="CASTDB.WEBGOAT_GUEST" exportName="UPDATE_EMPLOYEE" exportExtension=""/>
+  <CAST_Symbol_WithParent parent="p_Schema.1"/>
+  <POSITIONABLE POSITIONS="CAST_TargetSourceFile.23(1,1,41,-1)"/>
+  <CAST_CodeExpandable sourceFile="CAST_TargetSourceFile.23"/>
+ </instance>
+ <instance id="CAST_TargetSourceFile.23" instanceOf="CAST_TargetSourceFile">
+  <bookmark source="VASTCreateProcedure.1.src"/>
+  <shell fullPath="VASTCreateProcedure.1.src"/>
+ </instance>
+<instance id="p_Parameter.7" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="1"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_USERID"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="INTEGER" length="22" precision="38" scale=""/>
+</instance>
+<instance id="p_Parameter.8" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="2"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_FIRST_NAME"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="20" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.9" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="3"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_LAST_NAME"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="20" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.10" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="4"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_SSN"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="12" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.11" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="5"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_TITLE"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="20" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.12" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="6"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_PHONE"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="13" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.13" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="7"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_ADDRESS1"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="80" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.14" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="8"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_ADDRESS2"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="80" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.15" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="9"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_MANAGER"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="INTEGER" length="22" precision="38" scale=""/>
+</instance>
+<instance id="p_Parameter.16" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="10"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_START_DATE"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.1"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="CHAR" length="8" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.17" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="11"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_SALARY"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="INTEGER" length="22" precision="38" scale=""/>
+</instance>
+<instance id="p_Parameter.18" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="12"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_CCN"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="30" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.19" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="13"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_CCN_LIMIT"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="INTEGER" length="22" precision="38" scale=""/>
+</instance>
+<instance id="p_Parameter.20" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="14"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_DISCIPLINED_DATE"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.1"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="CHAR" length="8" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.21" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="15"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_DISCIPLINED_NOTES"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="60" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.22" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="16"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_PERSONAL_DESCRIPTION"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateProcedure.1"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="60" precision="" scale=""/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.7" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.7"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.8" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.8"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.9" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.22"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.10" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.21"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.11" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.20"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.1"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.12" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.19"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.13" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.18"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.14" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.17"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.15" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.16"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.1"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.16" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.15"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.24"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.17" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.14"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.18" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.13"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.19" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.12"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.20" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.11"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.21" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.10"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.22" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.9"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+</instances>

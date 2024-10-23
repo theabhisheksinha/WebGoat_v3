@@ -1,0 +1,8 @@
+CREATE OR REPLACE FUNCTION               EMPLOYEE_LOGIN(v_id NUMBER, v_password VARCHAR) RETURN NUMBER AS
+    stmt VARCHAR(32767);cnt NUMBER;
+BEGIN
+    stmt  := 'SELECT COUNT (*) FROM EMPLOYEE WHERE USERID = ' || v_id || ' AND PASSWORD = ''' || v_password || '''';
+    EXECUTE IMMEDIATE stmt INTO cnt;
+    RETURN cnt;
+END;
+

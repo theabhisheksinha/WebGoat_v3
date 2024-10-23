@@ -1,0 +1,36 @@
+<rules name="Rules" version="1.0.0.0" date="Tue Jan 24 21:52:09 CET 2012" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAST-Rules.xsd">
+ <rule name = "default">
+  <allow-link>
+   <caller layer="Webgoat Lessons"/>
+   <callee layer="Webgoat Session"/>
+  </allow-link>
+  <allow-link>
+   <caller layer="Webgoat Lessons"/>
+   <callee layer="Webgoat Database"/>
+  </allow-link>
+  <allow-link>
+   <caller layer="Webgoat Interface"/>
+   <callee layer="Webgoat Lessons"/>
+  </allow-link>
+  <allow-link>
+   <caller layer="Webgoat Interface"/>
+   <callee layer="Webgoat Session"/>
+  </allow-link>
+  <allow-link>
+   <caller layer="Webgoat Session"/>
+   <callee layer="Webgoat Lessons"/>
+  </allow-link>
+  <allow-link>
+   <caller layer="Webgoat Lessons"/>
+   <callee layer="Webgoat Interface"/>
+  </allow-link>
+  <allow-link>
+   <caller layer="Webgoat Session"/>
+   <callee layer="Webgoat Util"/>
+  </allow-link>
+  <allow-link>
+   <caller layer="Webgoat Lessons"/>
+   <callee layer="Webgoat Util"/>
+  </allow-link>
+ </rule>
+</rules>

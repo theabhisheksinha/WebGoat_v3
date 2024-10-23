@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<instances>
+ <instance id="VASTCreateFunction.2" instanceOf="CAST_Oracle_Function">
+  <CAST_ANSISQL_WithEncryptionAttribute isWrapped="0"/>
+  <CAST_SQL_Object version="10.2.0.4.0" owner="WEBGOAT_GUEST" objectId="52850"/>
+  <CAST_Oracle_RoutineBody aggregate="0" pipelined="0"/>
+  <CAST_ANSISQL_RoutineCharacteristic deterministic="2"/>
+  <CAST_Oracle_ParallelEnableClause parallelEnable="0"/>
+  <CAST_Resolution_Identification resolutionName="EMPLOYEE_LOGIN_BACKUP"/>
+  <CAST_Oracle_InvalidObject isInvalid="0"/>
+  <CAST_Linker_ExportedSymbol isPublic="1" exportCollation="2" exportedCategory="140399" exportedPath="CASTDB.WEBGOAT_GUEST" exportName="EMPLOYEE_LOGIN_BACKUP" exportExtension=""/>
+  <CAST_Symbol_WithParent parent="p_Schema.1"/>
+  <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="NUMBER" length="22" precision="" scale=""/>
+  <POSITIONABLE POSITIONS="CAST_TargetSourceFile.26(1,1,8,-1)"/>
+  <CAST_CodeExpandable sourceFile="CAST_TargetSourceFile.26"/>
+ </instance>
+ <instance id="CAST_TargetSourceFile.26" instanceOf="CAST_TargetSourceFile">
+  <bookmark source="VASTCreateFunction.2.src"/>
+  <shell fullPath="VASTCreateFunction.2.src"/>
+ </instance>
+<instance id="p_Parameter.3" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="1"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_ID"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateFunction.2"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.19"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="NUMBER" length="22" precision="" scale=""/>
+</instance>
+<instance id="p_Parameter.4" instanceOf="CAST_AST_ANSISQL_Generic_Parameter">
+ <CAST_AST_ANSISQL_WithOrder order="2"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_AST_ANSISQL_WithParameterDefaultValue usingDefaultKeyword=""/>
+ <CAST_Named nameAST="V_PASSWORD"/>
+ <CAST_AST_Parameter modeByValue="1" modeByReference="0" modeOutput="0"/>
+ <CAST_AST_WithParent parentAST="VASTCreateFunction.2"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="VARCHAR2" length="" precision="" scale=""/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.4" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.6"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.19"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.5" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.3"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.19"/>
+</instance>
+<instance id="CAST_AST_ANSISQL_ParameterDataTypeReference.6" instanceOf="CAST_AST_ANSISQL_ParameterDataTypeReference">
+ <CAST_AST_WithParent parentAST="p_Parameter.4"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.4"/>
+</instance>
+<instance id="p_Parameter.6" instanceOf="CAST_AST_ANSISQL_ReturnParameter">
+ <CAST_AST_ANSISQL_WithOrder order="-1"/>
+ <CAST_AST_ANSISQL_Builtin isBuiltin="1"/>
+ <CAST_Named nameAST="&lt;return value&gt;"/>
+ <CAST_AST_Parameter modeByValue="0" modeByReference="0" modeOutput="1"/>
+ <CAST_AST_WithParent parentAST="VASTCreateFunction.2"/>
+ <CAST_AST_WithResolutionSymbolReference resolutionSymbol="p_DataType.19"/>
+ <CAST_AST_ANSISQL_GenericDatatypeAttributes typeName="NUMBER" length="22" precision="" scale=""/>
+</instance>
+</instances>
