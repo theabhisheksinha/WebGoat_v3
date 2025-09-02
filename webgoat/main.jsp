@@ -7,9 +7,9 @@ WebSession webSession = ((WebSession)session.getAttribute("websession"));
 AbstractLesson currentLesson = webSession.getCurrentLesson();
 %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@page import="org.owasp.webgoat.lessons.RandomLessonAdapter"%>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title><%=currentLesson.getTitle()%></title>
@@ -67,7 +67,7 @@ StringBuffer buildList = new StringBuffer();
 		{
 		    Category category = (Category)iter2.next();
 		%>
-		<div id="<%=menuPrefix + category.getRanking()%>" style="position:absolute; left:30px; top:<%=topCord%>px; width:160px; z-index:<%=zIndex%>"><a href="javascript:;" onclick="trigMenuMagic1('<%=menuPrefix + category.getRanking()%>',1);return false" onfocus="if(this.blur)this.blur()"><img src="images/menu_images/1x1.gif" width="1" height=1"20" name="mbut<%=category.getRanking()%>" border="0" alt=""/><%=category.getName()%></a></div>
+		<div id="<%=menuPrefix + category.getRanking()%>" style="position:absolute; left:30px; top:<%=topCord%>px; width:160px; z-index:<%=zIndex%>"><a href="javascript:;" onclick="trigMenuMagic1('<%=menuPrefix + category.getRanking()%>',1);return false" onfocus="if(this.blur)this.blur()"><img src="images/menu_images/1x1.gif" width="1" height="20" name="mbut<%=category.getRanking()%>" border="0" alt=""/><%=category.getName()%></a></div>
 		<%
 		topCord=topCord + 30;
 		zIndex=zIndex + 1;
@@ -213,7 +213,7 @@ StringBuffer buildList = new StringBuffer();
 			    {
 			    	%>
 			    	<div id="training_wrap">
-			    	<div id="training" class="info"><a href="http://yehg.net/lab/pr0js/training/webgoat.php"><%=WebGoatI18N.get("SolutionVideos")%></a></div>
+			    	<div id="training" class="info"><a href="https://yehg.net/lab/pr0js/training/webgoat.php"><%=WebGoatI18N.get("SolutionVideos")%></a></div>
 			    	<div id="reset" class="info"><a href="<%=webSession.getRestartLink()%>"><%=WebGoatI18N.get("RestartLesson")%></a></div>
 			    	</div>
 	    			<%
@@ -290,8 +290,8 @@ StringBuffer buildList = new StringBuffer();
 	  	</div>
 
 		<div id="bottom">
-			<div align="center"><a href="http://www.owasp.org">OWASP Foundation</a> | 
-								<a href="http://www.owasp.org/index.php/OWASP_WebGoat_Project">Project WebGoat</a> | 
+			<div align="center"><a href="https://www.owasp.org">OWASP Foundation</a> | 
+								<a href="https://www.owasp.org/index.php/OWASP_WebGoat_Project">Project WebGoat</a> | 
 								<a href="mailto: <%=webSession.getWebgoatContext().getFeedbackAddress()%>?subject=WebGoat Bug Report - Lesson: 
 												 <%=webSession.getCurrentLesson().getName()%>">Report Bug</a>
 			</div>

@@ -5,8 +5,8 @@
 WebSession webSession = ((WebSession) session.getAttribute("websession"));
 %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>WebGoat V5.2</title>
@@ -28,14 +28,14 @@ by Bruce Mayhew. Please send all comments to Bruce at <%=webSession.getWebgoatCo
 <table border="0" align="center" class="lessonText">
 	<tr>
 		<td width="50%">
-		<div align="center"><a href="http://www.owasp.org"><img
+		<div align="center"><a href="https://www.owasp.org"><img
 			border="0" src="images/logos/owasp.jpg" alt="OWASP Foundation"
-			longdesc="http://www.owasp.org" /></a></div>
+			longdesc="https://www.owasp.org" /></a></div>
 		</td>
 		<td width="50%">
-		<div align="center"><a href="http://www.aspectsecurity.com"><img
+		<div align="center"><a href="https://www.aspectsecurity.com"><img
 			border="0" src="images/logos/aspect.jpg" alt="Aspect Security"
-			longdesc="http://www.aspectsecurity.com" /></a></div>
+			longdesc="https://www.aspectsecurity.com" /></a></div>
 		</td>
 	</tr>
 	<tr>
@@ -83,9 +83,9 @@ by Bruce Mayhew. Please send all comments to Bruce at <%=webSession.getWebgoatCo
 		<div align="center" class="style2">Sherif Koussa<br />
 		</div>
 		<div align="center" class="style2">Aung Khant<br />
-		(http://yehg.org/)</div>
+		(https://yehg.org/)</div>
 		<div align="center" class="style2">Erwin Geirnaert<br />
-		(http://www.zionsecurity.com/)</div>
+		(https://www.zionsecurity.com/)</div>
 		</td>
 	</tr>
 	<tr>

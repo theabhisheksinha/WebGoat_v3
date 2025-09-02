@@ -19,7 +19,7 @@ import org.owasp.webgoat.session.WebSession;
 
 public class SameOriginPolicyProtection extends LessonAdapter
 {
-	public final static A ASPECT_LOGO = new A().setHref("http://www.aspectsecurity.com")
+	public final static A ASPECT_LOGO = new A().setHref("https://www.aspectsecurity.com")
 			.addElement(
 						new IMG("images/logos/aspect.jpg").setAlt("Aspect Security").setBorder(0).setHspace(0)
 								.setVspace(0));
@@ -84,7 +84,7 @@ public class SameOriginPolicyProtection extends LessonAdapter
 			ec.addElement(new BR());
 
 			String webGoatURL = "lessons/Ajax/sameOrigin.jsp";
-			String googleURL = "http://www.google.com/search?q=aspect+security";
+			String googleURL = "https://www.google.com/search?q=aspect+security";
 
 			ec.addElement(new BR());
 

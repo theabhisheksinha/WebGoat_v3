@@ -163,7 +163,7 @@ public abstract class Screen
 	protected Element makeLogo()
 	{
 
-		return new A("http://www.aspectsecurity.com/webgoat.html", logo);
+		return new A("https://www.aspectsecurity.com/webgoat.html", logo);
 	}
 
 	public String getSponsor()

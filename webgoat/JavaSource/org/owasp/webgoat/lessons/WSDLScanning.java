@@ -150,7 +150,7 @@ public class WSDLScanning extends LessonAdapter
 			call.setReturnType(XMLType.XSD_STRING);
 			call.setUsername("guest");
 			call.setPassword("guest");
-			call.setTargetEndpointAddress("http://localhost:" + port + "/" + s.getRequest().getContextPath() + "/services/" + serv);
+			call.setTargetEndpointAddress("https://localhost:" + port + "/" + s.getRequest().getContextPath() + "/services/" + serv);
 			Object result = call.invoke(new Object[] { parameterValue });
 			return result;
 		} catch (RemoteException e)

@@ -177,7 +177,7 @@ public class Phishing extends LessonAdapter
 		hints
 				.add("Add functionality that can post a request, a button might work<BR><BR>"
 						+ "After getting the button on the page, don't forget you will need to steal the credentials and post them to: <BR>"
-						+ "http://localhost/WebGoat/capture/PROPERTY=yes&ADD_CREDENTIALS_HERE");
+						+ "https://localhost/WebGoat/capture/PROPERTY=yes&ADD_CREDENTIALS_HERE");
 		hints
 				.add("Try: <BR> "
 						+ "&lt;input type=&quot;submit&quot; name=&quot;login&quot; "

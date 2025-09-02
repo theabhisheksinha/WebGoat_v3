@@ -34,7 +34,7 @@ public class ClientSideValidation extends SequentialLessonAdapter
 	 * @return Description of the Return Value
 	 */
 
-	public final static A ASPECT_LOGO = new A().setHref("http://www.aspectsecurity.com")
+	public final static A ASPECT_LOGO = new A().setHref("https://www.aspectsecurity.com")
 			.addElement(
 						new IMG("images/logos/aspect.jpg").setAlt("Aspect Security").setBorder(0).setHspace(0)
 								.setVspace(0));
@@ -323,7 +323,7 @@ public class ClientSideValidation extends SequentialLessonAdapter
 
 		t.addElement(tr);
 		tr = new TR();
-		tr.addElement(new TD().addElement("Hewlett-Packard - Pavilion Notebook with Intel® Centrino™"));
+		tr.addElement(new TD().addElement("Hewlett-Packard - Pavilion Notebook with Intelï¿½ Centrinoï¿½"));
 
 		tr.addElement(new TD()
 				.addElement(

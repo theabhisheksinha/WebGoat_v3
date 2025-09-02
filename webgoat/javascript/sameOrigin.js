@@ -80,7 +80,7 @@ function populate(url){
 	
 	
 	var webGoatURL = "lessons/Ajax/sameOrigin.jsp";
-	var googleURL = "http://www.google.com/search?q=aspect+security";
+	var googleURL = "https://www.google.com/search?q=aspect+security";
 	
 	var hiddenWGStatus = document.getElementById("hiddenWGStatus");
 

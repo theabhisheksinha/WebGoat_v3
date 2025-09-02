@@ -171,7 +171,7 @@ public class CsrfPromptByPass extends CSRF
 
 	public Element getCredits()
 	{
-		A partnet = new A("http://www.partnet.com");
+		A partnet = new A("https://www.partnet.com");
 		partnet.setPrettyPrint(false);
 		partnet.addElement(new StringElement("PART"));
 		partnet.addElement(new B().addElement(new StringElement("NET")).setPrettyPrint(false));
