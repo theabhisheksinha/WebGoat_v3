@@ -79,8 +79,9 @@ function populate(url){
 	submitXHR();
 	
 	
-	var webGoatURL = "lessons/Ajax/sameOrigin.jsp";
-	var googleURL = "https://www.google.com/search?q=aspect+security";
+	// URLs now loaded from configuration
+var webGoatURL = window.webgoatConfig ? window.webgoatConfig.ajaxSameOriginUrl : "lessons/Ajax/sameOrigin.jsp";
+var googleURL = window.webgoatConfig ? window.webgoatConfig.googleSearchUrl : "https://www.google.com/search?q=aspect+security";
 	
 	var hiddenWGStatus = document.getElementById("hiddenWGStatus");
 

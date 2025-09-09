@@ -48,7 +48,7 @@
          parameters.  With Tomcat, you can also send requests
          to servlets not listed here with a request like this:
 
-           http://localhost:8080/{context-path}/servlet/{classname}
+           https://{hostname}:8443/{context-path}/servlet/{classname}
 
          but this usage is not guaranteed to be portable.  It also
          makes relative references to images and other resources
@@ -206,11 +206,11 @@
          particular servlet.  The examples below correspond to the
          servlet descriptions above.  Thus, a request URI like:
 
-           http://localhost:8080/{contextpath}/graph
+           https://{hostname}:8443/{contextpath}/graph
 
          will be mapped to the "graph" servlet, while a request like:
 
-           http://localhost:8080/{contextpath}/saveCustomer.do
+           https://{hostname}:8443/{contextpath}/saveCustomer.do
 
          will be mapped to the "controller" servlet.
 

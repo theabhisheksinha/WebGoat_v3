@@ -19,6 +19,7 @@ import org.apache.ecs.html.Table;
 import org.owasp.webgoat.Catcher;
 import org.owasp.webgoat.session.ECSFactory;
 import org.owasp.webgoat.session.WebSession;
+import org.owasp.webgoat.util.WebGoatProperties;
 
 
 /***************************************************************************************************
@@ -177,7 +178,7 @@ public class Phishing extends LessonAdapter
 		hints
 				.add("Add functionality that can post a request, a button might work<BR><BR>"
 						+ "After getting the button on the page, don't forget you will need to steal the credentials and post them to: <BR>"
-						+ "https://localhost/WebGoat/capture/PROPERTY=yes&ADD_CREDENTIALS_HERE");
+						+ WebGoatProperties.getWebGoatCaptureUrl());
 		hints
 				.add("Try: <BR> "
 						+ "&lt;input type=&quot;submit&quot; name=&quot;login&quot; "

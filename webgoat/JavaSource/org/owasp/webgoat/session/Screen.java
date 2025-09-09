@@ -10,6 +10,7 @@ import org.apache.ecs.html.A;
 import org.apache.ecs.html.Font;
 import org.apache.ecs.html.IMG;
 import org.owasp.webgoat.lessons.AbstractLesson;
+import org.owasp.webgoat.util.WebGoatProperties;
 
 
 /***************************************************************************************************
@@ -163,7 +164,7 @@ public abstract class Screen
 	protected Element makeLogo()
 	{
 
-		return new A("https://www.aspectsecurity.com/webgoat.html", logo);
+		return new A(WebGoatProperties.getAspectWebGoatUrl(), logo);
 	}
 
 	public String getSponsor()

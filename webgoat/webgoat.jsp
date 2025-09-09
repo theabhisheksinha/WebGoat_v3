@@ -11,6 +11,7 @@ WebSession webSession = ((WebSession) session.getAttribute("websession"));
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>WebGoat V5.2</title>
 <link rel="stylesheet" href="css/webgoat.css" type="text/css" />
+<script type="text/javascript" src="javascript/webgoat-config.js"></script>
 </head>
 
 <body>
@@ -83,9 +84,9 @@ by Bruce Mayhew. Please send all comments to Bruce at <%=webSession.getWebgoatCo
 		<div align="center" class="style2">Sherif Koussa<br />
 		</div>
 		<div align="center" class="style2">Aung Khant<br />
-		(https://yehg.org/)</div>
+		(<script>document.write(webgoatConfig.yehgTrainingUrl.replace('https://yehg.net/lab/pr0js/training/webgoat.php', 'https://yehg.org/'));</script>)</div>
 		<div align="center" class="style2">Erwin Geirnaert<br />
-		(https://www.zionsecurity.com/)</div>
+		(<script>document.write(webgoatConfig.zionsecurityUrl);</script>)</div>
 		</td>
 	</tr>
 	<tr>
