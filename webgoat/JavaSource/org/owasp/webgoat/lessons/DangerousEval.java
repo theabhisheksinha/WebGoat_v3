@@ -47,13 +47,13 @@ import org.owasp.webgoat.session.WebSession;
  * 
  * For details, please see http://code.google.com/p/webgoat/
  * 
- * @author Eric Sheridan, Aspect Security <a href="http://www.aspectsecurity.com"/>
+ * @author Eric Sheridan, Aspect Security <a href="https://www.aspectsecurity.com"/>
  * @created October 28, 2003
  */
 
 public class DangerousEval extends LessonAdapter
 {
-	public final static A ASPECT_LOGO = new A().setHref("http://www.aspectsecurity.com")
+	public final static A ASPECT_LOGO = new A().setHref("https://www.aspectsecurity.com")
 			.addElement(
 						new IMG("images/logos/aspect.jpg").setAlt("Aspect Security").setBorder(0).setHspace(0)
 								.setVspace(0));
@@ -123,7 +123,7 @@ public class DangerousEval extends LessonAdapter
 			tr.addElement(new TD().addElement("$" + total));
 			t.addElement(tr);
 			tr = new TR();
-			tr.addElement(new TD().addElement("Hewlett-Packard - Pavilion Notebook with Intel® Centrino™"));
+			tr.addElement(new TD().addElement("Hewlett-Packard - Pavilion Notebook with Intel Centrino"));
 			tr.addElement(new TD().addElement("1599.99").setAlign("right"));
 		    tr.addElement(new TD().addElement(new Input(Input.TEXT, "QTY3", s.getParser().getStringParameter("QTY3", "1"))).setAlign("right"));
 			quantity = s.getParser().getFloatParameter("QTY3", 0.0f);

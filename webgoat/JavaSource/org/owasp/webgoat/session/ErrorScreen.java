@@ -46,7 +46,7 @@ import org.apache.ecs.html.Table;
  * 
  * For details, please see http://code.google.com/p/webgoat/
  * 
- * @author Jeff Williams <a href="http://www.aspectsecurity.com">Aspect Security</a>
+ * @author Jeff Williams <a href="https://www.aspectsecurity.com">Aspect Security</a>
  * @created November 4, 2003
  */
 public class ErrorScreen extends Screen

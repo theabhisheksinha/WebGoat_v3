@@ -44,13 +44,13 @@ import org.owasp.webgoat.util.WebGoatI18N;
  * 
  * For details, please see http://code.google.com/p/webgoat/
  * 
- * @author Jeff Williams <a href="http://www.aspectsecurity.com">Aspect Security</a>
+ * @author Jeff Williams <a href="https://www.aspectsecurity.com">Aspect Security</a>
  * @created October 28, 2003
  */
 
 public class JavaScriptValidation extends LessonAdapter
 {
-	public final static A ASPECT_LOGO = new A().setHref("http://www.aspectsecurity.com")
+	public final static A ASPECT_LOGO = new A().setHref("https://www.aspectsecurity.com")
 			.addElement(
 						new IMG("images/logos/aspect.jpg").setAlt("Aspect Security").setBorder(0).setHspace(0)
 								.setVspace(0));

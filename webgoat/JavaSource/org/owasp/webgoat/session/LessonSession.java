@@ -30,7 +30,7 @@ package org.owasp.webgoat.session;
  * 
  * Represents a virtual session for a lesson. Lesson-specific session data may be stored here.
  * 
- * @author David Anderson <a href="http://www.aspectsecurity.com">Aspect Security</a>
+ * @author David Anderson <a href="https://www.aspectsecurity.com">Aspect Security</a>
  * @created January 19, 2006
  */
 public class LessonSession

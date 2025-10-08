@@ -28,7 +28,7 @@ package org.owasp.webgoat.util;
  * 
  * For details, please see http://code.google.com/p/webgoat/
  * 
- * @author Jeff Williams <a href="http://www.aspectsecurity.com">Aspect Security</a>
+ * @author Jeff Williams <a href="https://www.aspectsecurity.com">Aspect Security</a>
  */
 public class ExecResults
 {

@@ -52,7 +52,7 @@ import org.owasp.webgoat.util.HtmlEncoder;
  * 
  * For details, please see http://code.google.com/p/webgoat/
  * 
- * @author Ryan Knell <a href="http://www.aspectsecurity.com">Aspect Security</a>
+ * @author Ryan Knell <a href="https://www.aspectsecurity.com">Aspect Security</a>
  * @created July, 23 2007
  */
 
@@ -70,7 +70,7 @@ public class ConcurrencyCart extends LessonAdapter
 	private float ratio = 0;
 	private int discount = 0;
 
-	public final static A ASPECT_LOGO = new A().setHref("http://www.aspectsecurity.com")
+	public final static A ASPECT_LOGO = new A().setHref("https://www.aspectsecurity.com")
 			.addElement(
 						new IMG("images/logos/aspect.jpg").setAlt("Aspect Security").setBorder(0).setHspace(0)
 								.setVspace(0));
