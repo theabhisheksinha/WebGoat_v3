@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; fill: #34495e; }
+      .component { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+      .tech-label { font-family: Arial, sans-serif; font-size: 12px; fill: #2c3e50; }
+      .count-label { font-family: Arial, sans-serif; font-size: 10px; fill: #7f8c8d; }
+      .transaction-label { font-family: Arial, sans-serif; font-size: 11px; fill: #2c3e50; }
+      .db-label { font-family: Arial, sans-serif; font-size: 12px; fill: white; font-weight: bold; }
+      .arrow { stroke: #34495e; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .bidirectional { stroke: #e74c3c; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#ecf0f1"/>
+  
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" class="title">WebGoat v3 - Reverse Engineering Architecture Graph</text>
+  <text x="700" y="55" text-anchor="middle" class="subtitle">Based on Cast Imaging Analysis - 531 Total Objects, 42 Transactions, 16 Data Graphs</text>
+  
+  <!-- Main Architecture Components -->
+  
+  <!-- Web Interaction Layer -->
+  <rect x="50" y="100" width="300" height="120" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="200" y="125" text-anchor="middle" class="component">Web Interaction Layer</text>
+  <text x="200" y="145" text-anchor="middle" class="count-label">137 Objects</text>
+  
+  <!-- JSP Presentation -->
+  <rect x="70" y="155" width="120" height="40" rx="5" fill="#5dade2"/>
+  <text x="130" y="175" text-anchor="middle" class="tech-label">JSP Presentation</text>
+  <text x="130" y="188" text-anchor="middle" class="count-label">54 objects</text>
+  
+  <!-- JavaScript -->
+  <rect x="210" y="155" width="120" height="40" rx="5" fill="#5dade2"/>
+  <text x="270" y="175" text-anchor="middle" class="tech-label">JavaScript</text>
+  <text x="270" y="188" text-anchor="middle" class="count-label">76 objects</text>
+  
+  <!-- Logic Services Layer -->
+  <rect x="400" y="100" width="350" height="120" rx="10" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+  <text x="575" y="125" text-anchor="middle" class="component">Logic Services Layer</text>
+  <text x="575" y="145" text-anchor="middle" class="count-label">348 Objects</text>
+  
+  <!-- Java Business Logic -->
+  <rect x="420" y="155" width="100" height="40" rx="5" fill="#f39c12"/>
+  <text x="470" y="175" text-anchor="middle" class="tech-label">Java Business</text>
+  <text x="470" y="188" text-anchor="middle" class="count-label">111 objects</text>
+  
+  <!-- Java Servlet -->
+  <rect x="540" y="155" width="80" height="40" rx="5" fill="#f39c12"/>
+  <text x="580" y="175" text-anchor="middle" class="tech-label">Servlets</text>
+  <text x="580" y="188" text-anchor="middle" class="count-label">4 objects</text>
+  
+  <!-- JEE Business Logic -->
+  <rect x="640" y="155" width="90" height="40" rx="5" fill="#f39c12"/>
+  <text x="685" y="175" text-anchor="middle" class="tech-label">JEE Logic</text>
+  <text x="685" y="188" text-anchor="middle" class="count-label">12 objects</text>
+  
+  <!-- Communication Services -->
+  <rect x="800" y="100" width="250" height="120" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  <text x="925" y="125" text-anchor="middle" class="component">Communication Services</text>
+  <text x="925" y="145" text-anchor="middle" class="count-label">16 Objects</text>
+  
+  <!-- Apache Axis2 -->
+  <rect x="820" y="155" width="80" height="40" rx="5" fill="#bb8fce"/>
+  <text x="860" y="175" text-anchor="middle" class="tech-label">Axis2</text>
+  <text x="860" y="188" text-anchor="middle" class="count-label">2 objects</text>
+  
+  <!-- Java Communication -->
+  <rect x="920" y="155" width="110" height="40" rx="5" fill="#bb8fce"/>
+  <text x="975" y="175" text-anchor="middle" class="tech-label">Java Comm</text>
+  <text x="975" y="188" text-anchor="middle" class="count-label">3 objects</text>
+  
+  <!-- Database Services -->
+  <rect x="1100" y="100" width="250" height="120" rx="10" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+  <text x="1225" y="125" text-anchor="middle" class="component">Database Services</text>
+  <text x="1225" y="145" text-anchor="middle" class="count-label">30 Objects</text>
+  
+  <!-- Oracle Database -->
+  <rect x="1120" y="155" width="100" height="40" rx="5" fill="#58d68d"/>
+  <text x="1170" y="175" text-anchor="middle" class="tech-label">Oracle DB</text>
+  <text x="1170" y="188" text-anchor="middle" class="count-label">24 objects</text>
+  
+  <!-- SQL Server -->
+  <rect x="1240" y="155" width="90" height="40" rx="5" fill="#58d68d"/>
+  <text x="1285" y="175" text-anchor="middle" class="tech-label">SQL Server</text>
+  <text x="1285" y="188" text-anchor="middle" class="count-label">6 objects</text>
+  
+  <!-- Component Dependencies (Arrows) -->
+  
+  <!-- Web to Logic bidirectional -->
+  <line x1="350" y1="160" x2="400" y2="160" class="bidirectional"/>
+  <line x1="400" y1="170" x2="350" y2="170" class="bidirectional"/>
+  
+  <!-- Logic to Communication -->
+  <line x1="750" y1="160" x2="800" y2="160" class="arrow"/>
+  
+  <!-- Communication to Logic -->
+  <line x1="800" y1="170" x2="750" y2="170" class="arrow"/>
+  
+  <!-- Logic to Database -->
+  <line x1="750" y1="180" x2="1100" y2="180" class="arrow"/>
+  
+  <!-- Web to Communication -->
+  <line x1="350" y1="140" x2="800" y2="140" class="arrow"/>
+  
+  <!-- Key Transactions Section -->
+  <rect x="50" y="280" width="1300" height="200" rx="10" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  <text x="700" y="305" text-anchor="middle" class="subtitle">Key Transaction Flows (42 Total)</text>
+  
+  <!-- Main Application Entry Points -->
+  <rect x="80" y="320" width="150" height="60" rx="5" fill="#17a2b8" stroke="#138496" stroke-width="1"/>
+  <text x="155" y="340" text-anchor="middle" class="transaction-label">main.jsp</text>
+  <text x="155" y="355" text-anchor="middle" class="count-label">Size: 1997 objects</text>
+  <text x="155" y="370" text-anchor="middle" class="count-label">Stack: Java, JSP, Servlet, SQL</text>
+  
+  <rect x="250" y="320" width="150" height="60" rx="5" fill="#17a2b8" stroke="#138496" stroke-width="1"/>
+  <text x="325" y="340" text-anchor="middle" class="transaction-label">webgoat.jsp</text>
+  <text x="325" y="355" text-anchor="middle" class="count-label">Size: 1797 objects</text>
+  <text x="325" y="370" text-anchor="middle" class="count-label">Stack: Java, JSP, JS, SQL</text>
+  
+  <!-- Servlet Operations -->
+  <rect x="420" y="320" width="150" height="60" rx="5" fill="#28a745" stroke="#1e7e34" stroke-width="1"/>
+  <text x="495" y="340" text-anchor="middle" class="transaction-label">Catcher Servlet</text>
+  <text x="495" y="355" text-anchor="middle" class="count-label">Size: 1832 objects</text>
+  <text x="495" y="370" text-anchor="middle" class="count-label">GET/POST Operations</text>
+  
+  <!-- Security Lesson Flows -->
+  <rect x="590" y="320" width="150" height="60" rx="5" fill="#dc3545" stroke="#c82333" stroke-width="1"/>
+  <text x="665" y="340" text-anchor="middle" class="transaction-label">SQL Injection</text>
+  <text x="665" y="355" text-anchor="middle" class="count-label">Multiple Lessons</text>
+  <text x="665" y="370" text-anchor="middle" class="count-label">EditProfile, ListStaff</text>
+  
+  <rect x="760" y="320" width="150" height="60" rx="5" fill="#dc3545" stroke="#c82333" stroke-width="1"/>
+  <text x="835" y="340" text-anchor="middle" class="transaction-label">XSS Lessons</text>
+  <text x="835" y="355" text-anchor="middle" class="count-label">Cross-Site Scripting</text>
+  <text x="835" y="370" text-anchor="middle" class="count-label">ViewProfile variants</text>
+  
+  <rect x="930" y="320" width="150" height="60" rx="5" fill="#6f42c1" stroke="#59359a" stroke-width="1"/>
+  <text x="1005" y="340" text-anchor="middle" class="transaction-label">RBAC Lessons</text>
+  <text x="1005" y="355" text-anchor="middle" class="count-label">Role-Based Access</text>
+  <text x="1005" y="370" text-anchor="middle" class="count-label">Control Scenarios</text>
+  
+  <!-- AJAX Lessons -->
+  <rect x="1100" y="320" width="150" height="60" rx="5" fill="#fd7e14" stroke="#e55a00" stroke-width="1"/>
+  <text x="1175" y="340" text-anchor="middle" class="transaction-label">AJAX Lessons</text>
+  <text x="1175" y="355" text-anchor="middle" class="count-label">Client-Side Filtering</text>
+  <text x="1175" y="370" text-anchor="middle" class="count-label">Size: 77 objects</text>
+  
+  <!-- Transaction Flow Arrows -->
+  <line x1="155" y1="380" x2="155" y2="420" class="arrow"/>
+  <line x1="325" y1="380" x2="325" y2="420" class="arrow"/>
+  <line x1="495" y1="380" x2="495" y2="420" class="arrow"/>
+  
+  <!-- Database Schema Section -->
+  <rect x="50" y="520" width="1300" height="180" rx="10" fill="#e8f5e8" stroke="#28a745" stroke-width="2"/>
+  <text x="700" y="545" text-anchor="middle" class="subtitle">Database Schema & Data Graphs (16 Total)</text>
+  
+  <!-- Oracle Tables -->
+  <rect x="80" y="560" width="120" height="40" rx="5" fill="#dc3545"/>
+  <text x="140" y="580" text-anchor="middle" class="db-label">EMPLOYEE</text>
+  <text x="140" y="595" text-anchor="middle" class="count-label">261 objects</text>
+  
+  <rect x="220" y="560" width="120" height="40" rx="5" fill="#dc3545"/>
+  <text x="280" y="580" text-anchor="middle" class="db-label">USER_DATA</text>
+  <text x="280" y="595" text-anchor="middle" class="count-label">247 objects</text>
+  
+  <rect x="360" y="560" width="120" height="40" rx="5" fill="#dc3545"/>
+  <text x="420" y="580" text-anchor="middle" class="db-label">PINS</text>
+  <text x="420" y="595" text-anchor="middle" class="count-label">246 objects</text>
+  
+  <rect x="500" y="560" width="120" height="40" rx="5" fill="#dc3545"/>
+  <text x="560" y="580" text-anchor="middle" class="db-label">WEATHER_DATA</text>
+  <text x="560" y="595" text-anchor="middle" class="count-label">245 objects</text>
+  
+  <rect x="640" y="560" width="120" height="40" rx="5" fill="#dc3545"/>
+  <text x="700" y="580" text-anchor="middle" class="db-label">TRANSACTIONS</text>
+  <text x="700" y="595" text-anchor="middle" class="count-label">244 objects</text>
+  
+  <!-- Additional Oracle Tables -->
+  <rect x="80" y="620" width="100" height="35" rx="5" fill="#6c757d"/>
+  <text x="130" y="640" text-anchor="middle" class="db-label">AUTH</text>
+  
+  <rect x="200" y="620" width="100" height="35" rx="5" fill="#6c757d"/>
+  <text x="250" y="640" text-anchor="middle" class="db-label">MESSAGES</text>
+  
+  <rect x="320" y="620" width="100" height="35" rx="5" fill="#6c757d"/>
+  <text x="370" y="640" text-anchor="middle" class="db-label">ROLES</text>
+  
+  <rect x="440" y="620" width="100" height="35" rx="5" fill="#6c757d"/>
+  <text x="490" y="640" text-anchor="middle" class="db-label">SALARIES</text>
+  
+  <rect x="560" y="620" width="100" height="35" rx="5" fill="#6c757d"/>
+  <text x="610" y="640" text-anchor="middle" class="db-label">OWNERSHIP</text>
+  
+  <rect x="680" y="620" width="120" height="35" rx="5" fill="#6c757d"/>
+  <text x="740" y="640" text-anchor="middle" class="db-label">USER_DATA_TAN</text>
+  
+  <!-- SQL Server Table -->
+  <rect x="820" y="560" width="150" height="40" rx="5" fill="#007bff"/>
+  <text x="895" y="580" text-anchor="middle" class="db-label">SQL Server EMPLOYEE</text>
+  <text x="895" y="595" text-anchor="middle" class="count-label">265 objects</text>
+  
+  <!-- Technology Stack Summary -->
+  <rect x="50" y="740" width="1300" height="120" rx="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="700" y="765" text-anchor="middle" class="subtitle">Technology Stack Distribution</text>
+  
+  <!-- Technology boxes -->
+  <rect x="80" y="780" width="100" height="30" rx="5" fill="#007bff"/>
+  <text x="130" y="798" text-anchor="middle" class="db-label">Java (432)</text>
+  
+  <rect x="200" y="780" width="120" height="30" rx="5" fill="#28a745"/>
+  <text x="260" y="798" text-anchor="middle" class="db-label">Apache Tomcat (52)</text>
+  
+  <rect x="340" y="780" width="100" height="30" rx="5" fill="#dc3545"/>
+  <text x="390" y="798" text-anchor="middle" class="db-label">Oracle (24)</text>
+  
+  <rect x="460" y="780" width="120" height="30" rx="5" fill="#6f42c1"/>
+  <text x="520" y="798" text-anchor="middle" class="db-label">Google Cloud (16)</text>
+  
+  <rect x="600" y="780" width="100" height="30" rx="5" fill="#fd7e14"/>
+  <text x="650" y="798" text-anchor="middle" class="db-label">JavaScript (63)</text>
+  
+  <rect x="720" y="780" width="120" height="30" rx="5" fill="#20c997"/>
+  <text x="780" y="798" text-anchor="middle" class="db-label">Unclassified (105)</text>
+  
+  <rect x="860" y="780" width="100" height="30" rx="5" fill="#6c757d"/>
+  <text x="910" y="798" text-anchor="middle" class="db-label">SQL Server (6)</text>
+  
+  <rect x="980" y="780" width="100" height="30" rx="5" fill="#e83e8c"/>
+  <text x="1030" y="798" text-anchor="middle" class="db-label">Google SDK (9)</text>
+  
+  <rect x="1100" y="780" width="100" height="30" rx="5" fill="#17a2b8"/>
+  <text x="1150" y="798" text-anchor="middle" class="db-label">Axis2 (2)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="890" width="1300" height="80" rx="10" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="700" y="915" text-anchor="middle" class="subtitle">Architecture Legend</text>
+  
+  <rect x="80" y="925" width="20" height="15" fill="#3498db"/>
+  <text x="110" y="937" class="tech-label">Web Layer (JSP, JavaScript)</text>
+  
+  <rect x="280" y="925" width="20" height="15" fill="#e67e22"/>
+  <text x="310" y="937" class="tech-label">Business Logic (Java, Servlets)</text>
+  
+  <rect x="500" y="925" width="20" height="15" fill="#9b59b6"/>
+  <text x="530" y="937" class="tech-label">Communication (Axis2, HTTP)</text>
+  
+  <rect x="720" y="925" width="20" height="15" fill="#27ae60"/>
+  <text x="750" y="937" class="tech-label">Database (Oracle, SQL Server)</text>
+  
+  <rect x="950" y="925" width="20" height="15" fill="#dc3545"/>
+  <text x="980" y="937" class="tech-label">Security Vulnerabilities</text>
+  
+  <line x1="80" y1="950" x2="120" y2="950" class="arrow"/>
+  <text x="130" y="955" class="tech-label">Unidirectional Flow</text>
+  
+  <line x1="280" y1="950" x2="320" y2="950" class="bidirectional"/>
+  <text x="330" y="955" class="tech-label">Bidirectional Flow</text>
+  
+</svg>

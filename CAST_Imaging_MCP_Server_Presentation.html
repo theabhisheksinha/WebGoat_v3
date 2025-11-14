@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAST Imaging MCP Server - Developer Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .slide {
+            background: white;
+            margin: 20px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            page-break-after: always;
+            min-height: 500px;
+        }
+        .slide h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .slide h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .slide h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        .title-slide {
+            text-align: center;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+        }
+        .title-slide h1 {
+            font-size: 3em;
+            border: none;
+            color: white;
+        }
+        .title-slide .subtitle {
+            font-size: 1.5em;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .highlight {
+            background: #f39c12;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .benefit {
+            background: #e8f5e8;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .pain-point {
+            background: #fdf2f2;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .solution {
+            background: #f0f8ff;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        @media print {
+            body { background: white; }
+            .slide { box-shadow: none; border: 1px solid #ddd; }
+            .navigation { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        
+        <!-- Slide 1: Title -->
+        <div class="slide title-slide">
+            <h1>CAST Imaging MCP Server</h1>
+            <div class="subtitle">Empowering Developers with Intelligent Code Analysis</div>
+            <p style="margin-top: 40px; font-size: 1.2em;">A Comprehensive Guide to Architecture Visualization and Code Quality Assessment</p>
+        </div>
+
+        <!-- Slide 2: What is CAST Imaging MCP Server? -->
+        <div class="slide">
+            <h1>What is CAST Imaging MCP Server?</h1>
+            
+            <h2>Definition</h2>
+            <ul>
+                <li><span class="emoji">🔧</span><strong>Model Context Protocol (MCP) Server</strong> for code analysis</li>
+                <li><span class="emoji">🏗️</span><strong>Automated architecture visualization</strong> and dependency mapping</li>
+                <li><span class="emoji">🔍</span><strong>Deep code insights</strong> for complex applications</li>
+                <li><span class="emoji">⚡</span><strong>Real-time integration</strong> with modern IDEs</li>
+            </ul>
+
+            <h2>Key Characteristics</h2>
+            <div class="two-column">
+                <div>
+                    <div class="benefit">
+                        <strong>🔍 Intelligent Analysis</strong><br>
+                        Automated code understanding
+                    </div>
+                    <div class="benefit">
+                        <strong>🏗️ Architecture Mapping</strong><br>
+                        Visual representation of system structure
+                    </div>
+                </div>
+                <div>
+                    <div class="benefit">
+                        <strong>📊 Quality Assessment</strong><br>
+                        Comprehensive code quality metrics
+                    </div>
+                    <div class="benefit">
+                        <strong>🔄 Real-time Integration</strong><br>
+                        Seamless IDE workflow
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Why Use CAST Imaging MCP Server? -->
+        <div class="slide">
+            <h1>Why Use CAST Imaging MCP Server?</h1>
+            
+            <h2>Core Benefits</h2>
+            <div class="benefit">
+                <strong>🎯 Architecture Visualization</strong>
+                <ul>
+                    <li>Automatically generates architectural diagrams</li>
+                    <li>Creates interactive dependency maps</li>
+                    <li>Multi-level system views</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>📈 Code Quality Assessment</strong>
+                <ul>
+                    <li>Identifies structural flaws and anti-patterns</li>
+                    <li>Detects security vulnerabilities (CVE)</li>
+                    <li>Measures technical debt</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>⚡ Legacy Code Understanding</strong>
+                <ul>
+                    <li>Rapid comprehension of complex codebases</li>
+                    <li>Reduces onboarding time for new developers</li>
+                    <li>Preserves institutional knowledge</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 4: Developer Pain Points Solved -->
+        <div class="slide">
+            <h1>Developer Pain Points Solved</h1>
+            
+            <div class="two-column">
+                <div>
+                    <h2>Before CAST Imaging</h2>
+                    <div class="pain-point">
+                        ❌ Hours spent understanding unfamiliar code
+                    </div>
+                    <div class="pain-point">
+                        ❌ Risk of breaking changes in complex systems
+                    </div>
+                    <div class="pain-point">
+                        ❌ Subjective code quality assessments
+                    </div>
+                    <div class="pain-point">
+                        ❌ Poor architectural decision making
+                    </div>
+                    <div class="pain-point">
+                        ❌ Reactive issue identification
+                    </div>
+                </div>
+                <div>
+                    <h2>After CAST Imaging</h2>
+                    <div class="solution">
+                        ✅ <strong>Instant code comprehension</strong>
+                    </div>
+                    <div class="solution">
+                        ✅ <strong>Confident change implementation</strong>
+                    </div>
+                    <div class="solution">
+                        ✅ <strong>Objective quality metrics</strong>
+                    </div>
+                    <div class="solution">
+                        ✅ <strong>Informed architectural decisions</strong>
+                    </div>
+                    <div class="solution">
+                        ✅ <strong>Proactive issue prevention</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: IDE Integration Capabilities -->
+        <div class="slide">
+            <h1>IDE Integration Capabilities</h1>
+            
+            <h2>Real-time Features</h2>
+            <ul>
+                <li><span class="emoji">📱</span><strong>Live Analysis:</strong> Instant feedback as you code</li>
+                <li><span class="emoji">🎯</span><strong>Contextual Information:</strong> Relevant architectural context</li>
+                <li><span class="emoji">🔍</span><strong>Interactive Exploration:</strong> Navigate code relationships</li>
+                <li><span class="emoji">🔎</span><strong>Smart Search:</strong> Find patterns and dependencies</li>
+                <li><span class="emoji">📚</span><strong>Integrated Documentation:</strong> Living documentation</li>
+            </ul>
+
+            <h2>Workflow Enhancement</h2>
+            <div class="two-column">
+                <div>
+                    <ul>
+                        <li><strong>Code Review Support</strong></li>
+                        <li><strong>Safe Refactoring Guidance</strong></li>
+                        <li><strong>Debugging Assistance</strong></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><strong>Feature Planning Support</strong></li>
+                        <li><strong>Team Onboarding Acceleration</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Application Overview Information -->
+        <div class="slide">
+            <h1>Application Overview Information</h1>
+            
+            <h2><span class="emoji">📊</span>High-Level Insights</h2>
+            
+            <div class="benefit">
+                <strong>Application Statistics</strong>
+                <ul>
+                    <li>Lines of code, complexity metrics</li>
+                    <li>Technology stack identification</li>
+                    <li>Component distribution</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>Architecture Summary</strong>
+                <ul>
+                    <li>System overview and structure</li>
+                    <li>Key architectural patterns</li>
+                    <li>Integration points</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>Quality Dashboard</strong>
+                <ul>
+                    <li>Overall health score</li>
+                    <li>Critical issues summary</li>
+                    <li>Improvement recommendations</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 7: Architectural Analysis -->
+        <div class="slide">
+            <h1>Architectural Analysis - Multi-Level Views</h1>
+            
+            <h2><span class="emoji">🏗️</span>Architecture Hierarchy</h2>
+            <ol>
+                <li><strong>Layer Level:</strong> User Interaction, Business Logic, Data Access</li>
+                <li><strong>Component Level:</strong> Web Services, Database Access, Security</li>
+                <li><strong>Sub-component Level:</strong> Detailed functional breakdowns</li>
+                <li><strong>Technology Category:</strong> Framework-specific groupings</li>
+                <li><strong>Element Type Level:</strong> Individual classes, methods, functions</li>
+            </ol>
+
+            <h2><span class="emoji">🔗</span>Dependency Analysis</h2>
+            <ul>
+                <li><strong>Inter-application dependencies</strong></li>
+                <li><strong>Intra-application relationships</strong></li>
+                <li><strong>Communication patterns</strong></li>
+            </ul>
+        </div>
+
+        <!-- Slide 8: Code Element Deep Dive -->
+        <div class="slide">
+            <h1>Code Element Deep Dive</h1>
+            
+            <h2><span class="emoji">🔍</span>Object Analysis</h2>
+            
+            <div class="benefit">
+                <strong>Detailed Properties</strong>
+                <ul>
+                    <li>Classes, functions, methods with metadata</li>
+                    <li>Source location and file context</li>
+                    <li>Complexity and size metrics</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>Relationship Mapping</strong>
+                <ul>
+                    <li><strong>Callers & Callees:</strong> Program flow analysis</li>
+                    <li><strong>Usage Patterns:</strong> Cross-transaction usage</li>
+                    <li><strong>Data Dependencies:</strong> How objects interact with data</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>Impact Analysis</strong>
+                <ul>
+                    <li><strong>Testing Requirements:</strong> What to test when changed</li>
+                    <li><strong>Evolution Impact:</strong> Ripple effects of modifications</li>
+                    <li><strong>Refactoring Safety:</strong> Safe change opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 9: Transaction & Data Flow Analysis -->
+        <div class="slide">
+            <h1>Transaction & Data Flow Analysis</h1>
+            
+            <h2><span class="emoji">🔄</span>Transaction Insights</h2>
+            <div class="two-column">
+                <div>
+                    <div class="benefit">
+                        <strong>User Interface Endpoints</strong>
+                        <ul>
+                            <li>Web pages, API endpoints</li>
+                            <li>User interaction patterns</li>
+                            <li>Request/response flows</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefit">
+                        <strong>Data Flow Tracking</strong>
+                        <ul>
+                            <li>How data moves through the application</li>
+                            <li>Transformation points</li>
+                            <li>Storage and retrieval patterns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="benefit">
+                        <strong>Performance Analysis</strong>
+                        <ul>
+                            <li>Complex object identification</li>
+                            <li>Bottleneck detection</li>
+                            <li>Execution sequencing</li>
+                        </ul>
+                    </div>
+
+                    <h3><span class="emoji">📊</span>Data Entity Networks</h3>
+                    <ul>
+                        <li>Database Interaction Patterns</li>
+                        <li>Entity Relationship Mapping</li>
+                        <li>Query Pattern Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Quality & Security Insights -->
+        <div class="slide">
+            <h1>Quality & Security Insights</h1>
+            
+            <h2><span class="emoji">🔒</span>Security Analysis</h2>
+            <div class="benefit">
+                <strong>CVE Identification</strong>
+                <ul>
+                    <li>Known vulnerability detection</li>
+                    <li>Security pattern analysis</li>
+                    <li>Risk assessment</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>Structural Quality</strong>
+                <ul>
+                    <li>Code quality issues</li>
+                    <li>Anti-pattern detection</li>
+                    <li>Maintainability metrics</li>
+                </ul>
+            </div>
+
+            <h2><span class="emoji">☁️</span>Modern Development Support</h2>
+            <ul>
+                <li><strong>Cloud Readiness Assessment:</strong> Migration blockers identification</li>
+                <li><strong>Green Computing Metrics:</strong> Energy efficiency analysis</li>
+                <li><strong>Standards Compliance:</strong> ISO 5055 adherence</li>
+            </ul>
+        </div>
+
+        <!-- Slide 11: Package & Dependency Management -->
+        <div class="slide">
+            <h1>Package & Dependency Management</h1>
+            
+            <h2><span class="emoji">📦</span>Third-party Analysis</h2>
+            <div class="benefit">
+                <strong>Library Usage Tracking</strong>
+                <ul>
+                    <li>Package versions and dependencies</li>
+                    <li>License compliance monitoring</li>
+                    <li>Security vulnerability scanning</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>Update Management</strong>
+                <ul>
+                    <li>Outdated package identification</li>
+                    <li>Security patch recommendations</li>
+                    <li>Breaking change impact analysis</li>
+                </ul>
+            </div>
+
+            <h2><span class="emoji">🔗</span>Dependency Health</h2>
+            <ul>
+                <li>Dependency tree visualization</li>
+                <li>Circular dependency detection</li>
+                <li>Unused dependency identification</li>
+            </ul>
+        </div>
+
+        <!-- Slide 12: Documentation & Knowledge Management -->
+        <div class="slide">
+            <h1>Documentation & Knowledge Management</h1>
+            
+            <h2><span class="emoji">📝</span>Automated Documentation</h2>
+            <div class="benefit">
+                <strong>Living Documentation</strong>
+                <ul>
+                    <li>Generated from code analysis</li>
+                    <li>Always up-to-date</li>
+                    <li>Contextually relevant</li>
+                </ul>
+            </div>
+
+            <div class="benefit">
+                <strong>Knowledge Preservation</strong>
+                <ul>
+                    <li>Institutional knowledge capture</li>
+                    <li>Developer insights integration</li>
+                    <li>Historical context maintenance</li>
+                </ul>
+            </div>
+
+            <h2><span class="emoji">🔍</span>Smart Search</h2>
+            <ul>
+                <li>Semantic code search</li>
+                <li>Documentation discovery</li>
+                <li>Pattern recognition</li>
+            </ul>
+        </div>
+
+        <!-- Slide 13: Practical Use Cases -->
+        <div class="slide">
+            <h1>Practical Use Cases</h1>
+            
+            <div class="two-column">
+                <div>
+                    <h2><span class="emoji">👨‍💻</span>Individual Developers</h2>
+                    <ul>
+                        <li>Rapid Codebase Understanding</li>
+                        <li>Confident Change Implementation</li>
+                        <li>Refactoring Opportunity Identification</li>
+                        <li>Architectural Pattern Learning</li>
+                    </ul>
+
+                    <h2><span class="emoji">👥</span>Development Teams</h2>
+                    <ul>
+                        <li>Enhanced Code Reviews</li>
+                        <li>Architecture Decision Support</li>
+                        <li>Technical Debt Management</li>
+                        <li>Accelerated Onboarding</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2><span class="emoji">👔</span>Technical Leaders</h2>
+                    <ul>
+                        <li>Architecture Governance</li>
+                        <li>Quality Metrics Tracking</li>
+                        <li>Risk Assessment</li>
+                        <li>Strategic Planning Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Getting Started -->
+        <div class="slide">
+            <h1>Getting Started</h1>
+            
+            <h2><span class="emoji">🚀</span>Quick Setup</h2>
+            <ol>
+                <li><strong>Install MCP Server</strong></li>
+                <li><strong>Configure IDE Integration</strong></li>
+                <li><strong>Run Initial Code Analysis</strong></li>
+                <li><strong>Explore Generated Insights</strong></li>
+            </ol>
+
+            <h2><span class="emoji">🎯</span>Best Practices</h2>
+            <ul>
+                <li>Start with <strong>architectural overview</strong></li>
+                <li>Focus on <strong>high-complexity areas</strong></li>
+                <li>Use <strong>interactive exploration</strong></li>
+                <li>Integrate into <strong>daily workflow</strong></li>
+            </ul>
+
+            <h2><span class="emoji">📈</span>Success Metrics</h2>
+            <ul>
+                <li>Reduced debugging time</li>
+                <li>Faster feature development</li>
+                <li>Improved code quality scores</li>
+                <li>Enhanced team collaboration</li>
+            </ul>
+        </div>
+
+        <!-- Slide 15: Key Advantages -->
+        <div class="slide">
+            <h1>Key Advantages</h1>
+            
+            <h2><span class="emoji">🌟</span>Unique Value Proposition</h2>
+            
+            <div class="solution">
+                <strong>Unlike Static Analysis Tools:</strong>
+                <ul>
+                    <li><strong>Dynamic, Interactive Exploration</strong></li>
+                    <li><strong>Real-time Insights</strong></li>
+                    <li><strong>Contextual Intelligence</strong></li>
+                    <li><strong>Workflow Integration</strong></li>
+                </ul>
+                <p><strong>Result: Better Development Decisions, Faster</strong></p>
+            </div>
+
+            <h2><span class="emoji">🎯</span>ROI Benefits</h2>
+            <div class="two-column">
+                <div>
+                    <ul>
+                        <li><strong>Reduced Development Time</strong></li>
+                        <li><strong>Lower Maintenance Costs</strong></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><strong>Improved Code Quality</strong></li>
+                        <li><strong>Enhanced Team Productivity</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Thank You -->
+        <div class="slide title-slide">
+            <h1>Thank You</h1>
+            <h2>Questions & Discussion</h2>
+            
+            <div style="margin-top: 40px;">
+                <p><strong>CAST Imaging MCP Server</strong></p>
+                <p><em>Transforming Code Understanding Through Intelligent Analysis</em></p>
+            </div>
+            
+            <div style="margin-top: 60px; font-size: 1.1em;">
+                <p><strong>Resources:</strong></p>
+                <ul style="list-style: none; text-align: center;">
+                    <li>📚 Documentation</li>
+                    <li>🛠️ Support</li>
+                    <li>👥 Community</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <div>Use Ctrl+P to print or save as PDF</div>
+        <div>Total: 16 slides</div>
+    </div>
+
+    <script>
+        // Add slide numbers
+        const slides = document.querySelectorAll('.slide');
+        slides.forEach((slide, index) => {
+            if (index > 0) { // Skip title slide
+                const slideNumber = document.createElement('div');
+                slideNumber.style.cssText = 'position: absolute; top: 20px; right: 30px; color: #7f8c8d; font-size: 0.9em;';
+                slideNumber.textContent = `${index + 1} / ${slides.length}`;
+                slide.style.position = 'relative';
+                slide.appendChild(slideNumber);
+            }
+        });
+
+        // Print functionality
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                window.print();
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

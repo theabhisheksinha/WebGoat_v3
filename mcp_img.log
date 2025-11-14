@@ -1,0 +1,5 @@
+2025-09-01 18:22:51,076 - server.config - INFO - Using default internal config file: /app/server/config/app.config
+2025-09-01 18:22:51,078 - server.config - ERROR - Failed to load configuration from /app/server/config/app.config: 1 validation error for Settings
+  Value error, Failed to parse: http://None:None/eureka/apps [type=value_error, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-09-01 18:22:51,079 - server.config - INFO - Attempting fallback to: /app/server/config/app.config

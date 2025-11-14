@@ -1,0 +1,29 @@
+# Converting Markdown to PowerPoint - Instructions
+
+Since I cannot create a binary PowerPoint file directly, here are several options to convert the markdown presentation to PowerPoint:
+
+## Option 1: Use Pandoc (Recommended)
+1. Install Pandoc: https://pandoc.org/installing.html
+2. Run this command in PowerShell:
+   ```
+   pandoc CAST_Imaging_MCP_Server_Presentation.md -o CAST_Imaging_MCP_Server_Presentation.pptx
+   ```
+
+## Option 2: Manual Copy-Paste
+1. Open the markdown file: CAST_Imaging_MCP_Server_Presentation.md
+2. Create a new PowerPoint presentation
+3. Copy each slide section and paste into PowerPoint slides
+4. Format as needed
+
+## Option 3: Online Converters
+- Use online tools like:
+  - Slides.com
+  - Beautiful.ai
+  - Canva (supports markdown import)
+
+## Option 4: Use Marp (Markdown Presentation Ecosystem)
+1. Install Marp: https://marp.app/
+2. Open the markdown file in Marp
+3. Export as PowerPoint
+
+The markdown file contains all the content structured for easy conversion to slides.
